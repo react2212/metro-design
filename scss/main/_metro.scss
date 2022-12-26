@@ -1,0 +1,40 @@
+main {
+	nav {
+		width: 100%;
+		padding: 20px 10vw;
+		display: flex;
+		gap: 40px;
+
+		a {
+			color: #555;
+		}
+	}
+
+	#news {
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		padding: 5px;
+
+		article {
+			width: 25%;
+			height: 25vw;
+			padding: 5px;
+			float: left;
+
+			&:nth-of-type(1),
+			&:nth-of-type(4),
+			&:nth-of-type(9) {
+				width: 50%;
+			}
+
+			.inner {
+				width: 100%;
+				height: 100%;
+				background: gray;
+			}
+		}
+	}
+}
