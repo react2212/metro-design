@@ -10,5 +10,10 @@ btnMetro.forEach((btn, idx) => {
 
 		for (const el of boxMetro) el.classList.remove('on');
 		boxMetro[idx].classList.add('on');
+
+		setTimeout(() => {
+			for (const el of boxMetro) el.classList.remove('active');
+			boxMetro[idx].classList.add('active');
+		}, 0);
 	});
 });
