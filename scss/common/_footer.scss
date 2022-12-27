@@ -3,6 +3,7 @@ footer {
 	position: relative;
 	background: #fff;
 	filter: url('#effect');
+	z-index: 2;
 
 	.toggle {
 		display: flex;
