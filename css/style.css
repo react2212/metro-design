@@ -190,7 +190,7 @@ figure {
 #location {
   width: 100%;
   height: 60vh;
-  background: #111;
+  background: #32354f;
   position: relative;
   z-index: 1;
 }
@@ -200,6 +200,8 @@ figure {
   position: absolute;
   top: 0;
   left: 0;
+  filter: invert(1) grayscale(1) brightness(0.8);
+  opacity: 0.3;
 }
 
 /*# sourceMappingURL=style.css.map */
