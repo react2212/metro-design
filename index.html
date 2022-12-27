@@ -126,7 +126,23 @@
 
   <aside id="location"></aside>
 
-  <footer></footer>
+  <footer>
+    <a href="#" class="toggle"><span>+</span></a>
+    <section class="upper"></section>
+    <section class="lower">
+      <p>2023 Designer & Developer Code Laboratory &copy; All Rights reserved.</p>
+    </section>
+  </footer>
+
+  <svg>
+    <defs>
+      <filter id="effect">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="alpha" />
+        <feBlend in="SourceGraphic" in2="alpha" />
+      </filter>
+    </defs>
+  </svg>
 
 </body>
 
